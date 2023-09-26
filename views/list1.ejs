@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="work">
+            <h2>To-Do List</h2>
+            <% for(let i=0;i<listItems.length;i++){ %>
+                <input type="checkbox" class="white">
+                <label class="white"><%= listItems[i] %></label><br/>
+                <% } %>
+            <form action="/add-item-list1" method="post" autocomplete="off">
+                <input type="text" name="new" class="white input-row">
+                <button type="submit" class="white">Add</button>
+            </form>
+        </div>
+        
+            
+        
+    </div>
+</body>
+</html>
